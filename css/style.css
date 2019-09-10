@@ -1,0 +1,61 @@
+/* CSS Document */
+
+body{
+	background:#0099CC;
+	margin:0;
+	padding:0;
+}
+a{ text-decoration:none;}
+.container{
+	/*border:2px solid #0033FF;*/
+	width:auto;
+}
+.home{
+	width:100%;
+	height:100%;
+}
+.side-item{
+	width:500px;
+	height:500px;
+	background:#FFF;
+	margin:0 auto;
+	padding:0px;
+	/*border:2px solid #0033FF;*/
+	margin-top:100px;
+	border-radius:5%;
+}
+.logo{
+	width:95px;
+	height:95px;
+	margin:0 auto;
+	margin-top:50px;
+	border-radius:50%;
+	border:2px solid #666666;
+	margin-bottom:20px;
+	line-height:95px;
+	padding:2px;
+}
+.logo h1{
+	font-weight:700;
+	font-size:40px;
+}
+input[type=text],
+input[type=password]{
+	border:0;
+	border-radius:30px;
+	border-bottom:2px solid #666;
+}
+.select{
+	border:0;
+	border-radius:30px;
+	border-bottom:2px solid #666;
+}
+.btn-info{
+	border:0;
+	background:#ff3366;
+	border-radius:30px;
+	margin-top:12px;
+}
+.btn-info:hover{
+	transition:0.5s;
+}
