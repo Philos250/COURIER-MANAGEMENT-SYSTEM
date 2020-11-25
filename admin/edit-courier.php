@@ -7,7 +7,7 @@ if (strlen($_SESSION['cuid']==0)) {
 header('location:login.php');
 } else{
 $cid=$_GET['cid'];
-echo $cid;
+// echo $cid;
 $userid=$_SESSION['cuid'];
 $query=mysqli_query($con,"select * from tbl_courier where cid='$cid'");
 //$result=mysqli_fetch_array($query);

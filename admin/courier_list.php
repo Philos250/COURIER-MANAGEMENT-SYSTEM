@@ -123,7 +123,7 @@ $sql = $conn ->prepare("SELECT COUNT(cid) as m FROM tbl_courier WHERE status !='
 								<td><?php echo $result['rev_name']; ?></td>
 								<td><?php echo $result['pick_date']; ?> - <?php echo $result['pick_time']; ?></td>
 								<td><?php echo $result['status']; ?></td>
-								<td><a class="btn btn-default"href="edit-courier.php?cid=<?php echo $cid; ?>">Edit</a> <a class="btn btn-danger"href="<?php echo $cid; ?>">Delete</a></td>
+								<td><a class="btn btn-default"href="edit-courier.php?cid=<?php echo $cid; ?>">Edit</a> <a class="btn btn-danger"href="delete-courier.php?cid=<?php echo $cid; ?>">Delete</a></td>
 							</tr>
 							<?php }?>
 						  </table>
