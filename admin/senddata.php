@@ -1,5 +1,5 @@
 <?php
-include'dbcon.php';
+include 'dbcon.php';
 if(isset($_POST['send'])){
 $message=$_POST['msg'];
 
@@ -32,7 +32,7 @@ $message=$_POST['msg'];
 	$Comments = $_POST['Comments'];
 //Query for inserting data
 $query = "INSERT INTO tbl_courier (cuid, cons_no, ship_name, phone, s_add, rev_name, r_phone, r_add, dname, plaque, type, qty, book_mode, Totalfreight, mode, office, pick_date, pick_time, status, comments, book_date )
-VALUES('$userID','$ConsignmentNo', '$Shippername','$Shipperphone', '$Shipperaddress', '$Receivername','$Receiverphone','$Receiveraddress', '$drivername', '$plaque', '$Shiptype', $Qnty, '$Bookingmode', '$Totalfreight', '$Mode', '$office', '$Packupdate', '$Pickuptime', '$status', '$Comments', NOW())";
+VALUES('$userID','$ConsignmentNo', '$Shippername','$Shipperphone', '$Shipperaddress', '$Receivername','$Receiverphone','$Receiveraddress', '$drivername', '$plaque', '$Shiptype', '$Qnty' , '$Bookingmode', '$Totalfreight', '$Mode', '$office', '$Packupdate', '$Pickuptime', '$status', '$Comments', NOW())";
 
 if ($conn->query($query )) {
 
@@ -66,9 +66,13 @@ if ($conn->query($query )) {
             //close connection
             curl_close($ch);
             
-			echo"<script>alert('The Notification Has Been Sent');window.location='courier_list.php'</script>";
+			echo"<script>alert('The Notification Has Been Sent');
+			window.location='courier_list.php'; 
+			</script>";
 	}else{
-		echo "<script type= 'text/javascript'>alert('Courier Not Updated.');window.location=\'courier_list.php\'</script>";
+		echo "<script type= 'text/javascript'>alert('Courier Not Updated.');
+		window.location='courier_list.php';
+		</script>";
 	} 
 }
 ?>

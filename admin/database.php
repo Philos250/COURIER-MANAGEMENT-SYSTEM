@@ -5,8 +5,7 @@ $dbUser = 'root';
 $dbPass = '';
 $dbName = 'courier_db';
 
-$dbConn = mysql_connect ($dbHost, $dbUser, $dbPass) or die ('MySQL connect failed. ' . mysql_error());
-mysql_select_db($dbName) or die('Cannot select database. ' . mysql_error());
+$dbConn = mysqli_connect ($dbHost, $dbUser, $dbPass , $dbName) or die ('MySQL connect failed. ' . mysqli_error());
 
 function dbQuery($sql)
 {

@@ -1,8 +1,8 @@
 <?php 
 session_start();
 error_reporting(0);
-include('dbconnection.php');
-require_once('library.php');
+include 'dbconnection.php';
+require_once 'library.php';
 $rand = get_rand_id(8);
 if (strlen($_SESSION['cuid']==0)) {
 header('location:login.php');
@@ -555,7 +555,7 @@ echo "<option value='".$rows."'>".$rows."</option>";
 								</select>
 							<div class="form-group">
 							  <label>Pickup Date</label>
-								<input name="Packupdate" type="date" id="Packupdate" class="form-control" style="cursor: text;" onClick="ds_sh(this);" maxlength="15"  placeholder="Enter Pick Date" required><span class="REDLink">*</span> 
+								<input name="Packupdate" type="date" id="Packupdate" class="form-control" style="cursor: text;"   placeholder="Enter Pick Date" required><span class="REDLink">*</span> 
 							</div>
 							<div class="form-group">
 							  <label>Pickup Time (Now Time is: <?php echo date('H:i:s');?>)</label>

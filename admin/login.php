@@ -33,7 +33,7 @@ if(isset($_POST['login']))
 	
  	<!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	<link href="css/style.css" rel="stylesheet">
 	<script language="javascript">
 	<!--
